@@ -6,6 +6,15 @@
     font-family: 'sora';
 }
 
+html,
+body {
+    background-color: #ffffff;
+    background-image: -webkit-linear-gradient(180deg, #ffffff 0%, #FFBBEC 100%);
+    background-image: -moz-linear-gradient(180deg, #ffffff 0%, #FFBBEC 100%);
+    background-image: -o-linear-gradient(180deg, #ffffff 0%, #FFBBEC 100%);
+    background-image: linear-gradient(180deg, #ffffff 0%, #FFBBEC 100%);
+}
+
 .nav {
     display: flex;
     border-bottom: 1px solid #D9AFD9;
@@ -41,14 +50,17 @@
     text-transform: uppercase;
     text-align: center;
     margin: 1.5rem auto;
-    background-color: #fff;
 }
 
 .logo h5 {
     font-size: 2rem;
     font-weight: 600;
-    color: #D9AFD9;
     cursor: pointer;
+}
+
+.logo h5 a {
+    text-decoration: none;
+    color: #D9AFD9;
 }
 
 .article-container {
@@ -128,48 +140,76 @@ figure .article-image {
 /* footer section*/
 
 .footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .child {
     color: rgb(160, 158, 158);
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 2.5rem auto;
-}
-
-.line {
-    margin: 2.5rem auto;
-    max-width: 80%;
-    border: 1px solid #D9AFD9;
-}
-
-.child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.child .img {
-    flex-basis: center;
-    margin: 0 2.5rem;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
+    background-color: #D9AFD9;
     border-radius: 50%;
-    cursor: pointer;
-    transition: .3s ease-in;
+    margin: 2rem 2rem;
 }
 
-.child .name {
+.footer .child a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     text-align: center;
-    margin: 20px auto;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
 }
 
-.child .img:hover {
-    transform: scale(1.06);
+.footer .child a i {
+    font-size: 1.5rem;
+    line-height: 50px;
+    color: #acacac;
+    transition: all 0.3 ease-out;
 }
 
-.child .img::after {
-    content: '';
+.footer .child a:nth-child(1):hover i {
+    color: #ffffff;
+}
+
+.footer .child:nth-child(1):hover a {
+    background-color: #727272;
+    transform: scale(1.08);
+    box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.192);
+}
+
+.footer .child a:nth-child(2):hover i {
+    color: #ffffff;
+}
+
+.footer .child:nth-child(2):hover a {
+    background-color: #da448f;
+    transform: scale(1.08);
+    box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.192);
+}
+
+.footer .child a:nth-child(3):hover i {
+    color: #ffffff;
+}
+
+.footer .child:nth-child(3):hover a {
+    background-color: #03f0f8;
+    transform: scale(1.08);
+    box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.192);
+}
+
+.footer .child a:nth-child(4):hover i {
+    color: #ffffff;
+}
+
+.footer .child:nth-child(4):hover a {
+    background-color: #6472f1;
+    transform: scale(1.08);
+    box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.192);
 }
 
 
@@ -200,6 +240,31 @@ figure .article-image {
         color: rgb(241, 244, 247);
         font-family: "Sora";
     }
+    .footer .child {
+        color: rgb(160, 158, 158);
+        display: flex;
+        width: 40px;
+        height: 40px;
+        background-color: #D9AFD9;
+        border-radius: 50%;
+        margin: 1.4rem 0.5rem;
+    }
+    .footer .child a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        overflow: hidden;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        transition: all 0.3s ease-out;
+    }
+    .footer .child a i {
+        font-size: 1.5rem;
+        line-height: 40px;
+        color: #acacac;
+        transition: all 0.3 ease-out;
+    }
 }
 
 @media (max-width: 768.98px) {
@@ -218,6 +283,19 @@ figure .article-image {
         max-width: 100%;
         min-height: 50px;
     }
+    /* .child {
+        max-width: 20px;
+        max-height: 20px;
+        margin: 0.5rem auto;
+    }
+    i.fab {
+        width: 40px;
+        height: 40px;
+    }
+    .fab {
+        padding: 0.5rem 0.5rem;
+        font-size: .5rem;
+    } */
 }
 
 @media (max-width: 992.98px) {
