@@ -141,9 +141,13 @@ figure .article-image {
 
 .main-form {
     display: flex;
-    flex-direction: column;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     max-width: 40%;
+    overflow: hidden;
     border-radius: 2rem;
     margin: 2rem auto;
     background-color: rgb(255, 255, 255);
@@ -183,6 +187,19 @@ figure .article-image {
     display: inline-block;
     width: 100%;
     /* background-color: #FFBBEC; */
+}
+
+.main-form .thumbnails {
+    position: absolute;
+    background-color: #333;
+    left: 0;
+    margin: 2rem 2rem 2rem 2rem;
+    width: 450px;
+}
+
+.main-form .thumbnails img {
+    display: inline-block;
+    max-width: 100%;
 }
 
 .main-form .main-section .input-body label {
