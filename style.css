@@ -15,9 +15,14 @@ body {
     background-image: linear-gradient(180deg, #ffffff 0%, #FFBBEC 100%);
 }
 
+:root {
+    --primary-color: #FFBBEC;
+    --secondary-color: #fff;
+}
+
 .nav {
     display: flex;
-    border-bottom: 1px solid #D9AFD9;
+    border-bottom: 1px solid var(--primary-color);
     flex-direction: row;
 }
 
@@ -29,7 +34,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    background-color: #D9AFD9;
+    background-color: var(--primary-color);
 }
 
 .nav-link {
@@ -60,7 +65,7 @@ body {
 
 .logo h5 a {
     text-decoration: none;
-    color: #D9AFD9;
+    color: var(--primary-color);
 }
 
 .article-container {
@@ -76,7 +81,7 @@ body {
     width: 18rem;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.048);
     border-radius: 0.5rem;
-    background-color: #D9AFD9;
+    background-color: var(--primary-color);
     overflow: hidden;
     transition: all 0.5s ease-in;
 }
@@ -179,7 +184,7 @@ figure .article-image {
     font-weight: 600;
     padding: 0rem 2rem;
     margin: 0rem;
-    color: #FFBBEC;
+    color: var(--primary-color);
     /* background-color: #666666; */
 }
 
@@ -244,15 +249,15 @@ figure .article-image {
     font-weight: 600;
     width: 20%;
     border-radius: 10px;
-    border: 1px solid #FFBBEC;
+    border: 1px solid var(--primary-color);
     line-height: 100%;
     background-color: #fff;
-    color: #FFBBEC;
+    color: var(--primary-color);
     transition: all .3s ease-in-out;
 }
 
 .main-form .main-section .button-section input[type='submit']:hover {
-    background-color: #FFBBEC;
+    background-color: var(--primary-color);
     color: #ffffff;
 }
 
@@ -269,7 +274,7 @@ figure .article-image {
     display: flex;
     width: 50px;
     height: 50px;
-    background-color: #D9AFD9;
+    background-color: var(--primary-color);
     border-radius: 50%;
     margin: 2rem 2rem;
 }
@@ -307,7 +312,7 @@ figure .article-image {
 }
 
 .footer .child:nth-child(2):hover a {
-    background-color: #da448f;
+    background-color: var(--primary-color);
     transform: scale(1.08);
     box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.192);
 }
@@ -379,7 +384,7 @@ figure .article-image {
         font-weight: 600;
         padding: 0rem 2rem;
         margin: 0rem;
-        color: #FFBBEC;
+        color: var(--primary-color);
         /* background-color: #666666; */
     }
     .main-form .main-section {
@@ -407,10 +412,10 @@ figure .article-image {
         font-weight: 600;
         width: 30%;
         border-radius: 10px;
-        border: 1px solid #FFBBEC;
+        border: 1px solid var(--primary-color)C;
         line-height: 100%;
         background-color: #fff;
-        color: #FFBBEC;
+        color: var(--primary-color);
         transition: all .3s ease-in-out;
     }
     .footer .child {
@@ -418,7 +423,7 @@ figure .article-image {
         display: flex;
         width: 40px;
         height: 40px;
-        background-color: #D9AFD9;
+        background-color: var(--primary-color);
         border-radius: 50%;
         margin: 1.4rem 0.5rem;
     }
@@ -446,7 +451,7 @@ figure .article-image {
         max-height: 40rem;
         box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.158);
         border-radius: 0.5rem;
-        background-color: #D9AFD9;
+        background-color: var(--primary-color);
         overflow: hidden;
     }
     .article-image {
@@ -478,7 +483,7 @@ figure .article-image {
         max-height: 38rem;
         box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.158);
         border-radius: 0.5rem;
-        background-color: #D9AFD9;
+        background-color: var(--primary-color);
         overflow: hidden;
     }
     .article-image {
@@ -497,7 +502,7 @@ figure .article-image {
         max-height: 38rem;
         box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.158);
         border-radius: 0.5rem;
-        background-color: #D9AFD9;
+        background-color: var(--primary-color);
         overflow: hidden;
     }
     .article-image {
@@ -516,7 +521,7 @@ figure .article-image {
         margin: 2.5rem;
         box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.158);
         border-radius: 0.5rem;
-        background-color: #D9AFD9;
+        background-color: var(--primary-color);
         overflow: hidden;
     }
     .article-image {
