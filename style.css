@@ -15,14 +15,9 @@ body {
     background-image: linear-gradient(180deg, #ffffff 0%, #FFBBEC 100%);
 }
 
-:root {
-    --primary-color: #FFBBEC;
-    --secondary-color: #fff;
-}
-
 .nav {
     display: flex;
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 1px solid #FFBBEC;
     flex-direction: row;
 }
 
@@ -34,7 +29,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    background-color: var(--primary-color);
+    background-color: #FFBBEC;
 }
 
 .nav-link {
@@ -65,7 +60,7 @@ body {
 
 .logo h5 a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: #FFBBEC;
 }
 
 .article-container {
@@ -81,7 +76,7 @@ body {
     width: 18rem;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.048);
     border-radius: 0.5rem;
-    background-color: var(--primary-color);
+    background-color: #FFBBEC;
     overflow: hidden;
     transition: all 0.5s ease-in;
 }
@@ -151,7 +146,7 @@ figure .article-image {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    max-width: 40%;
+    width: 80%;
     overflow: hidden;
     border-radius: 2rem;
     margin: 2rem auto;
@@ -160,7 +155,7 @@ figure .article-image {
 }
 
 .main-form .main-section {
-    max-width: 500px;
+    width: 60%;
     overflow: hidden;
     line-height: 100%;
     /* background-color: rgb(65, 65, 65); */
@@ -184,27 +179,8 @@ figure .article-image {
     font-weight: 600;
     padding: 0rem 2rem;
     margin: 0rem;
-    color: var(--primary-color);
+    color: #FFBBEC;
     /* background-color: #666666; */
-}
-
-.main-form .main-section .input-body {
-    display: inline-block;
-    width: 100%;
-    /* background-color: #FFBBEC; */
-}
-
-.main-form .thumbnails {
-    position: absolute;
-    background-color: #333;
-    left: 0;
-    margin: 2rem 2rem 2rem 2rem;
-    width: 450px;
-}
-
-.main-form .thumbnails img {
-    display: inline-block;
-    max-width: 100%;
 }
 
 .main-form .main-section .input-body label {
@@ -249,15 +225,15 @@ figure .article-image {
     font-weight: 600;
     width: 20%;
     border-radius: 10px;
-    border: 1px solid var(--primary-color);
+    border: 1px solid #FFBBEC;
     line-height: 100%;
     background-color: #fff;
-    color: var(--primary-color);
+    color: #FFBBEC;
     transition: all .3s ease-in-out;
 }
 
 .main-form .main-section .button-section input[type='submit']:hover {
-    background-color: var(--primary-color);
+    background-color: #FFBBEC;
     color: #ffffff;
 }
 
@@ -274,7 +250,7 @@ figure .article-image {
     display: flex;
     width: 50px;
     height: 50px;
-    background-color: var(--primary-color);
+    background-color: #FFBBEC;
     border-radius: 50%;
     margin: 2rem 2rem;
 }
@@ -312,7 +288,7 @@ figure .article-image {
 }
 
 .footer .child:nth-child(2):hover a {
-    background-color: var(--primary-color);
+    background-color: #da448f;
     transform: scale(1.08);
     box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.192);
 }
@@ -367,16 +343,34 @@ figure .article-image {
     }
     .main-form {
         display: flex;
-        flex-direction: column;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
-        max-width: 60%;
-        height: 100%;
+        justify-content: center;
+        width: 80%;
+        overflow: hidden;
         border-radius: 2rem;
         margin: 2rem auto;
         background-color: rgb(255, 255, 255);
         box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.048);
     }
-    .main-form .header h5 {
+    .main-form .main-section {
+        width: 60%;
+        overflow: hidden;
+        line-height: 100%;
+        /* background-color: rgb(65, 65, 65); */
+    }
+    .main-form .header {
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        overflow: hidden;
+        margin: 2rem 0rem 2rem 0rem;
+        /* background-color: #da448f; */
+    }
+    .main-form .main-section .header h5 {
         box-sizing: border-box;
         display: inline-block;
         line-height: 50px;
@@ -384,46 +378,63 @@ figure .article-image {
         font-weight: 600;
         padding: 0rem 2rem;
         margin: 0rem;
-        color: var(--primary-color);
+        color: #FFBBEC;
         /* background-color: #666666; */
     }
-    .main-form .main-section {
-        max-width: 800px;
-        overflow: hidden;
-        line-height: 50%;
-        /* background-color: rgb(65, 65, 65); */
+    .main-form .main-section .input-body label {
+        margin: .2rem auto;
+        color: #333;
+        font-size: 1.2rem;
+        font-weight: 600;
     }
-    .main-form .main-section .email label,
-    .main-form .main-section .name label {
-        font-size: 1rem;
+    .main-form .main-section .input-body input {
+        box-sizing: border-box;
+        display: inline-block;
+        background-color: rgba(235, 235, 235, 0.26);
+        width: 100%;
+        height: 20px;
+        border: none;
+        padding: 1rem 0;
+        margin: .5rem auto;
     }
-    .main-form .main-section .email,
-    .main-form .main-section .name {
-        font-size: 0.5rem;
+    .main-form .main-section .input-body textarea {
+        display: block;
+        color: #333;
+        background-color: rgba(235, 235, 235, 0.26);
+        margin: 2rem 0rem;
+        width: 100%;
+        height: 100%;
+        border: none;
     }
     .main-form .main-section .button-section {
-        margin: 0;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
     }
     .main-form .main-section .button-section input[type='submit'] {
         display: block;
-        margin: .5rem auto;
+        margin: 2rem auto;
         padding: 1rem .2rem;
         font-size: 1rem;
         font-weight: 600;
-        width: 30%;
+        width: 20%;
         border-radius: 10px;
-        border: 1px solid var(--primary-color)C;
+        border: 1px solid #FFBBEC;
         line-height: 100%;
         background-color: #fff;
-        color: var(--primary-color);
+        color: #FFBBEC;
         transition: all .3s ease-in-out;
+    }
+    .main-form .main-section .button-section input[type='submit']:hover {
+        background-color: #FFBBEC;
+        color: #ffffff;
     }
     .footer .child {
         color: rgb(160, 158, 158);
         display: flex;
         width: 40px;
         height: 40px;
-        background-color: var(--primary-color);
+        background-color: #D9AFD9;
         border-radius: 50%;
         margin: 1.4rem 0.5rem;
     }
@@ -451,7 +462,7 @@ figure .article-image {
         max-height: 40rem;
         box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.158);
         border-radius: 0.5rem;
-        background-color: var(--primary-color);
+        background-color: #FFBBEC;
         overflow: hidden;
     }
     .article-image {
@@ -460,6 +471,94 @@ figure .article-image {
     .article-image img {
         max-width: 100%;
         min-height: 50px;
+    }
+    .main-form {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        overflow: hidden;
+        border-radius: 2rem;
+        margin: 2rem auto;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.048);
+    }
+    .main-form .main-section {
+        width: 60%;
+        overflow: hidden;
+        line-height: 100%;
+        /* background-color: rgb(65, 65, 65); */
+    }
+    .main-form .header {
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        overflow: hidden;
+        margin: 2rem 0rem 2rem 0rem;
+        /* background-color: #da448f; */
+    }
+    .main-form .header h5 {
+        box-sizing: border-box;
+        display: inline-block;
+        line-height: 50px;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 0rem 2rem;
+        margin: 0rem;
+        color: #FFBBEC;
+        /* background-color: #666666; */
+    }
+    .main-form .main-section .input-body label {
+        margin: .2rem auto;
+        color: #333;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .main-form .main-section .input-body input {
+        box-sizing: border-box;
+        display: inline-block;
+        background-color: rgba(235, 235, 235, 0.26);
+        width: 100%;
+        height: 20px;
+        border: none;
+        padding: 1rem 0;
+        margin: .5rem auto;
+    }
+    .main-form .main-section .input-body textarea {
+        display: block;
+        color: #333;
+        background-color: rgba(235, 235, 235, 0.26);
+        margin: 2rem 0rem;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    .main-form .main-section .button-section {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    .main-form .main-section .button-section input[type='submit'] {
+        display: block;
+        margin: 2rem auto;
+        padding: 1rem .2rem;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 20%;
+        border-radius: 10px;
+        border: 1px solid #FFBBEC;
+        line-height: 100%;
+        background-color: #fff;
+        color: #FFBBEC;
+        transition: all .3s ease-in-out;
+    }
+    .main-form .main-section .button-section input[type='submit']:hover {
+        background-color: #FFBBEC;
+        color: #ffffff;
     }
     /* .child {
         max-width: 20px;
@@ -483,7 +582,7 @@ figure .article-image {
         max-height: 38rem;
         box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.158);
         border-radius: 0.5rem;
-        background-color: var(--primary-color);
+        background-color: #FFBBEC;
         overflow: hidden;
     }
     .article-image {
@@ -492,6 +591,94 @@ figure .article-image {
     .article-image img {
         max-width: 100%;
         min-height: 50px;
+    }
+    .main-form {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        overflow: hidden;
+        border-radius: 2rem;
+        margin: 2rem auto;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.048);
+    }
+    .main-form .main-section {
+        width: 60%;
+        overflow: hidden;
+        line-height: 100%;
+        /* background-color: rgb(65, 65, 65); */
+    }
+    .main-form .header {
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        overflow: hidden;
+        margin: 2rem 0rem 2rem 0rem;
+        /* background-color: #da448f; */
+    }
+    .main-form .header h5 {
+        box-sizing: border-box;
+        display: inline-block;
+        line-height: 50px;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 0rem 2rem;
+        margin: 0rem;
+        color: #FFBBEC;
+        /* background-color: #666666; */
+    }
+    .main-form .main-section .input-body label {
+        margin: .2rem auto;
+        color: #333;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .main-form .main-section .input-body input {
+        box-sizing: border-box;
+        display: inline-block;
+        background-color: rgba(235, 235, 235, 0.26);
+        width: 100%;
+        height: 20px;
+        border: none;
+        padding: 1rem 0;
+        margin: .5rem auto;
+    }
+    .main-form .main-section .input-body textarea {
+        display: block;
+        color: #333;
+        background-color: rgba(235, 235, 235, 0.26);
+        margin: 2rem 0rem;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    .main-form .main-section .button-section {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    .main-form .main-section .button-section input[type='submit'] {
+        display: block;
+        margin: 2rem auto;
+        padding: 1rem .2rem;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 20%;
+        border-radius: 10px;
+        border: 1px solid #FFBBEC;
+        line-height: 100%;
+        background-color: #fff;
+        color: #FFBBEC;
+        transition: all .3s ease-in-out;
+    }
+    .main-form .main-section .button-section input[type='submit']:hover {
+        background-color: #FFBBEC;
+        color: #ffffff;
     }
 }
 
@@ -502,7 +689,7 @@ figure .article-image {
         max-height: 38rem;
         box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.158);
         border-radius: 0.5rem;
-        background-color: var(--primary-color);
+        background-color: #FFBBEC;
         overflow: hidden;
     }
     .article-image {
@@ -511,6 +698,10 @@ figure .article-image {
     .article-image img {
         max-width: 100%;
         min-height: 50px;
+    }
+    .main-form {
+        display: flex;
+        width: 100%;
     }
 }
 
@@ -521,7 +712,7 @@ figure .article-image {
         margin: 2.5rem;
         box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.158);
         border-radius: 0.5rem;
-        background-color: var(--primary-color);
+        background-color: #FFBBEC;
         overflow: hidden;
     }
     .article-image {
@@ -530,5 +721,93 @@ figure .article-image {
     .article-image img {
         max-width: 100%;
         min-height: 50px;
+    }
+    .main-form {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        overflow: hidden;
+        border-radius: 2rem;
+        margin: 2rem auto;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.048);
+    }
+    .main-form .main-section {
+        width: 60%;
+        overflow: hidden;
+        line-height: 100%;
+        /* background-color: rgb(65, 65, 65); */
+    }
+    .main-form .header {
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        overflow: hidden;
+        margin: 2rem 0rem 2rem 0rem;
+        /* background-color: #da448f; */
+    }
+    .main-form .header h5 {
+        box-sizing: border-box;
+        display: inline-block;
+        line-height: 50px;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 0rem 2rem;
+        margin: 0rem;
+        color: #FFBBEC;
+        /* background-color: #666666; */
+    }
+    .main-form .main-section .input-body label {
+        margin: .2rem auto;
+        color: #333;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .main-form .main-section .input-body input {
+        box-sizing: border-box;
+        display: inline-block;
+        background-color: rgba(235, 235, 235, 0.26);
+        width: 100%;
+        height: 20px;
+        border: none;
+        padding: 1rem 0;
+        margin: .5rem auto;
+    }
+    .main-form .main-section .input-body textarea {
+        display: block;
+        color: #333;
+        background-color: rgba(235, 235, 235, 0.26);
+        margin: 2rem 0rem;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    .main-form .main-section .button-section {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    .main-form .main-section .button-section input[type='submit'] {
+        display: block;
+        margin: 2rem auto;
+        padding: 1rem .2rem;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 20%;
+        border-radius: 10px;
+        border: 1px solid #FFBBEC;
+        line-height: 100%;
+        background-color: #fff;
+        color: #FFBBEC;
+        transition: all .3s ease-in-out;
+    }
+    .main-form .main-section .button-section input[type='submit']:hover {
+        background-color: #FFBBEC;
+        color: #ffffff;
     }
 }
